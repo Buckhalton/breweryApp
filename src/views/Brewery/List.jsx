@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import BreweryListItem from './components/BreweryListItem';
 
 export default function BreweryList() {
   const [breweries, setBreweries] = useState([]);
@@ -29,15 +29,7 @@ export default function BreweryList() {
         <button type='reset'>Reset</button>
       </form>
       <ul>
-
-      {isLoading ? 'Spinner and/or skeleton goes here' : breweries.map(brewery => {
-        return (
-          <li>
-            <Link to={`/breweries/${brewery.id}`}>{brewery.name}</Link>
-            <p>{`${brewery.city}, ${brewery.state}`}</p>
-          </li>
-        )
-      })}
+        {isLoading ? 'Spinner and/or skeleton goes here' : breweries.map(brewery => <BreweryListItem brewery={brewery}/>)}
       </ul>
     </main>
   );
