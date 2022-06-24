@@ -26,7 +26,7 @@ export default function BreweryDetail() {
       {isLoading ? 'Loading skeleton goes here' : (
         <>
         <h1>{brewery.name}</h1>
-        <p>{brewery.city}, {brewery.state} 12345</p>
+        <p>{brewery.city}, {brewery.state}</p>
         <p>{brewery.country}</p>
         <p>{brewery.phone}</p>
         {brewery.website_url && (
