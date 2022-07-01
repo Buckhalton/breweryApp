@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/breweryApp/static/css/main.5febf438.css",
+    "main.js": "/breweryApp/static/js/main.36a059ee.js",
+    "static/js/787.96ece1b4.chunk.js": "/breweryApp/static/js/787.96ece1b4.chunk.js",
+    "index.html": "/breweryApp/index.html",
+    "main.5febf438.css.map": "/breweryApp/static/css/main.5febf438.css.map",
+    "main.36a059ee.js.map": "/breweryApp/static/js/main.36a059ee.js.map",
+    "787.96ece1b4.chunk.js.map": "/breweryApp/static/js/787.96ece1b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5febf438.css",
+    "static/js/main.36a059ee.js"
+  ]
+}
