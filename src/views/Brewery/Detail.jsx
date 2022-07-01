@@ -22,10 +22,10 @@ export default function BreweryDetail() {
   }, [id])
 
   return (
-    <main class="list-item">
+    <main className="list-item">
       {isLoading ? 'Loading skeleton goes here' : (
         <>
-        <h1>{brewery.name}</h1>
+        <h1 className="header">{brewery.name}</h1>
         <p>{brewery.city}, {brewery.state}</p>
         <p>{brewery.country}</p>
         <p>{brewery.phone}</p>

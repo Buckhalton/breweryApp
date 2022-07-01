@@ -41,6 +41,17 @@ a {
     width: 80px;
 }
 
+.pagination {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 .button:hover {
     background-color: rgb(75, 117, 103);
 }

@@ -25,7 +25,7 @@ const BrewerySearchResults = () => {
 return (
     <div>
          <Link to='/breweries'>Back to Breweries</Link>
-         <h1>Search Results</h1>
+         <h1 className="header">Search Results</h1>
       <ul>
         {isLoading ? 'Spinner and/or skeleton goes here' : searchResults.map(brewery => <BreweryListItem key={brewery.id} brewery={brewery}/>)}
       </ul>
