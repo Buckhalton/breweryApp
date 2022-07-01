@@ -22,7 +22,7 @@ export default function BreweryDetail() {
   }, [id])
 
   return (
-    <main>
+    <main class="list-item">
       {isLoading ? 'Loading skeleton goes here' : (
         <>
         <h1>{brewery.name}</h1>

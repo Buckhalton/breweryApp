@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(242, 229, 215);
+}
+
+.header {
+    color: rgb(53, 80, 112);
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.actions {
+    display: flex;
+    height: 32px;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;    
+    border: 1px solid rgb(53, 80, 112);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 4px 0;
+    background-color: rgb(250, 247, 243);
+}
+
+a {
+    color: rgb(91, 142, 125);
+}
+
+.button {
+    background-color: rgb(91, 142, 125);
+    color: rgb(250, 247, 243);
+    border: 1px solid rgb(53, 80, 112);
+    border-radius: 2px;
+    margin: 4px;
+    width: 80px;
+}
+
+.button:hover {
+    background-color: rgb(75, 117, 103);
+}
+
+.input {
+    background-color: rgb(250, 247, 243);
+    border: 1px solid rgb(53, 80, 112);
+    flex-grow: 1;
+    margin: 4px 0;
+}

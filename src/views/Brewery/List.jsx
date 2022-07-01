@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import BreweryListItem from './components/BreweryListItem';
 
 export default function BreweryList() {
-  const [breweries, setBreweries] = useState([]);
-  const [search, setSearch] = useState('');
-  const [isLoading, setIsLoading] = useState(true);
+  const [breweries, setBreweries] = React.useState([]);
+  const [search, setSearch] = React.useState('');
+  const [isLoading, setIsLoading] = React.useState(true);
   const navigate = useNavigate();
 
-  useEffect(() => {
+  React.useEffect(() => {
     const fetchBreweries = async () => {
       try{
         const response = await fetch('https://api.openbrewerydb.org/breweries?per_page=10');
@@ -29,13 +29,13 @@ export default function BreweryList() {
 
   return (
     <main>
-      <h1>Brewery Catalog</h1>
-      <form>
-        <input onChange={(e) => handleChange(e)} type='text' name='search' placeholder='Find a brewery' />
-        <button onClick={() => navigate(`/breweries/search?query=${search}`)} type='submit'>Search</button>
-        <button type='reset'>Reset</button>
+      <h1 class="header">Brewery Catalog</h1>
+      <form class="actions">
+        <input class="input" onChange={(e) => handleChange(e)} type='text' name='search' placeholder='Find a brewery' />
+        <button class="button" onClick={() => navigate(`/breweries/search?query=${search}`)} type='submit'>Search</button>
+        <button class="button" type='reset'>Reset</button>
       </form>
-      <ul>
+      <ul class="list-container">
         {isLoading ? 'Spinner and/or skeleton goes here' : breweries.map(brewery => <BreweryListItem key={brewery.id} brewery={brewery}/>)}
       </ul>
     </main>
