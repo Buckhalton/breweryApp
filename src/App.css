@@ -15,6 +15,7 @@ body {
 
 .actions {
     display: flex;
+    justify-content: space-between;
     height: 32px;
 }
 
@@ -41,7 +42,7 @@ a {
     width: 80px;
 }
 
-.pagination {
+.pagination-container {
     display: flex;
     justify-content: space-around;
 }
@@ -56,9 +57,13 @@ a {
     background-color: rgb(75, 117, 103);
 }
 
+label {
+    margin: auto 0;
+}
+
 .input {
     background-color: rgb(250, 247, 243);
     border: 1px solid rgb(53, 80, 112);
-    flex-grow: 1;
+    width: 168px;
     margin: 4px 0;
 }
